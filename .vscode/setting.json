@@ -1,0 +1,8 @@
+{
+  "files.associations": {
+    "parsing_helpers.h": "c",
+    "bpf.h": "c",
+    "bpf_helpers.h": "c",
+    "icmpv6.h": "c"
+  }
+}
