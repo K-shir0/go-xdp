@@ -1,3 +1,5 @@
 **/*.o
 **/*_bpfel.go
 **/*_bpfeb.go
+
+go-xdp

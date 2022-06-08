@@ -3,16 +3,17 @@ package main
 import (
 	"flag"
 	"fmt"
-	"github.com/cilium/ebpf/link"
-	"github.com/cilium/ebpf/rlimit"
 	"log"
 	"net"
 	"os"
 	"os/signal"
 	"syscall"
+
+	"github.com/cilium/ebpf/link"
+	"github.com/cilium/ebpf/rlimit"
 )
 
-//go:generate go run github.com/cilium/ebpf/cmd/bpf2go bpf bpf/xdp_prog_kern.c -- -I./libbpf/src
+//go:generate go run github.com/cilium/ebpf/cmd/bpf2go bpf bpf/xdp_prog_kern.c -- -I../libbpf/src
 
 var iface string
 
